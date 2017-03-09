@@ -1,5 +1,38 @@
-# Leaflet.Draw.Drag
+# Leaflet.Draw.Drag.demo
 
+Cloned from [Leaflet.Draw.Drag](https://github.com/w8r/Leaflet.draw.drag)
+
+**Modified**
+
+1.  Use leaflet-draw-0.4.9 instead of 0.4.3
+1.  Update to use latest `dist/Leaflet.draw.drag.js`
+1.  Update to use latest `dist/Leaflet.draw.drag-src.js`
+1.  Update default image path to use `leaflet@1.0.3` instead of `leaflet-0.7`
+
+**TODOs**
+
+1. Retrieving objects, e.g.
+
+   ```bash
+   var usersObjectsJson = drawnItems.toGeoJSON()
+   ```
+   
+1. Save changes to file or database; styles need to be handled separately
+
+    See also https://github.com/Leaflet/Leaflet.draw/issues/253
+
+**Run on Windows**
+```bash
+npm install
+npm run build
+npm install -g http-server
+http-server
+```
+
+Then on browser: http://127.0.0.1:8080
+
+
+## README (original)
 [![npm version](https://badge.fury.io/js/leaflet-draw-drag.svg)](https://badge.fury.io/js/leaflet-draw-drag)
 
 Drag feature functionality for [Leaflet.draw](https://github.com/Leaflet/Leaflet.draw).

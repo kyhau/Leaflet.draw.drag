@@ -3,7 +3,7 @@ var data = require('../data.json');
 var drawControl = require('../../index');
 // require('./L.TouchExtend');
 
-L.Icon.Default.imagePath = "http://cdn.leafletjs.com/leaflet-0.7/images";
+L.Icon.Default.imagePath = "https://unpkg.com/leaflet@1.0.3/dist/images/";
 
 ////////////////////////////////////////////////////////////////////////////////
 var map = global.map = new L.Map('map', {}).setView([22.42658, 114.1452], 11);
@@ -65,3 +65,11 @@ L.DomEvent.on(document.querySelector('.centroids'), 'change', function(e) {
     //}
   }, 50);
 });
+
+
+// TODO Kayan: For saving
+// var usersObjectsJson = drawnItems.toGeoJSON()
+//
+// TODO: save it to file or database, styles need to be handled separately
+// https://github.com/Leaflet/Leaflet.draw/issues/253
+//
